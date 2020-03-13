@@ -1,0 +1,49 @@
+\chapter{Proposta do Framework: eJET}
+
+\section{Introdução}
+
+O objetivo geral deste trabalho é fornecer um \textit{framework} para desenvolvimento de jogos educativos leves de tabuleiro com gráficos 2D usando tecnologia Web, conforme delineado na Seção 1. Assim, um \textit{framework} foi   implementado   visando   mapear   cada   conceito   teórico   (ver   Seção   2.1)   num   código,organizado de forma estrutural em módulos. O  \textit{framework} proposto como um todo foi chamado de Framework Edgar de Jogos Educativos de Tabuleiro (eJET). Na sequência são apresentados os diferentes módulos que compõem o eJET e alguns trechos de código dos mesmos.
+
+\section{Módulos do eJET}
+
+\subsection {Módulo Screen: tela do logotipo, tela do menu, tela do jogo, tela de fim-de-jogo e transições de tela}
+
+\subsection{ Módulo Menu: descrição hierárquica de menu navegável por teclado e mouse}
+
+\subsection{ Módulo Board: imagem de fundo, câmera, tabuleiro e caminho (path) dos jogadores}
+
+\subsection{ Módulo Sprite: objetos gráficos representando jogadores e seres animados}
+
+\subsection{ Módulo Dialog: janela do tipo mensagem, questão-e-resposta e lançamento-de-dados}
+
+\subsection{ Módulo Players: registro dos nomes dos jogadores, o turno atual, suas posições e pontuações (scores)}
+
+%A proposta é mostrar uma ferramenta que auxilia na criação de jogos, especificamente jogos educativos na plataforma \textit{Web}. A \textit{Web}, do ponto de vista de uma plataforma para jogo, já possui muitos \textit{frameworks} capazes de suprir as necessidades de desenvolvedores experientes de jogos convencionais, porém eles não se propõem a educação. Para desenvolvedores inexperientes, como professores não ligados a área de tecnologia, pode ser muito difícil criar um jogo educativo para auxiliar nas aulas ou qualquer outra razão que seja.
+
+%Pensar em quantidade de quadro por segundo, renderização, como realizar animações ou até mesmo a mecânica do jogo não deverão ser a preocupação principal no desenvolvimento de um jogo educativo, ao invés disso o foco deve ser mantido no conteúdo educativo. Portanto o \textit{framework}, mostrado aqui, é baseado em Template fazendo com que o usuário crie sobre uma base sólida de modelos de jogo baseado no gênero de estratégias.
+
+%Um Template dar ao usuário estrutura básica do modelo de jogo do qual o Template pertente abranger, um tipo peça por exemplo em um Template para jogos de tabuleiro com peças. O usuário pode alterar o comportamento dos componentes da tela através de eventos, movendo uma peça para uma posição do tabuleiro ou removendo-a. Logo o \textit{framework} se encarregará de cuidar de todo os detalhes que estão por trás da configuração descrita pelo usuário, animando a movimentação das peças.
+
+
+%Em cada Template há estrutura genérica para conter o conteúdo educativo que pretende ser mostrado no jogo. No caso de um jogo de tabuleiros com peças é possível inserir perguntas e respostas que serão mostradas quando uma peça estiver em uma determinada posição. É possível inserir o conteúdo educacional fora do padrão genérico com uso do eventos, demandando um pouco mais de esforço do criador, mas opcionalmente possibilitando a customização adaptativa para uma necessidade de ensino.
+
+\chapter{Proposta das Ferramentas: eJET Tools}
+
+\section{Introdução}
+
+Além do \textit{framework} de código em si, o eJET contém duas ferramentas produzidas para auxiliar o desenvolvedor. Isso está em consonância com o contexto definido na Seção 1 de tentar facilitar desenvolvimento de jogos com o \textit{framework} na medida do possível e observando também a estrutura regular descrita na Seção 2 sobre jogos educativos de tabuleiro. Com base nisso, o trabalho avançou em duas frentes, gerando duas ferramentas que são descritas à seguir.
+
+\section{Compilador eJET}
+
+O Compilador eJET é um programa de linha de comando que recebe um arquivo com descrições da estrutura fundamental do jogo (telas, imagem e música de fundo, etc.) e gera um projeto completo com HTML, CSS e JavaScript pré-pronto para o desenvolvedor utilizar o framework eJET. O compilador aceita receber a descrição geral do jogo num formato XML / JSON / YAML.
+
+O formato do arquivo de entrada é da seguinte maneira:
+
+(decidir qual formato usar xml, json ou yaml)
+
+\section{Editor de Tabuleiro do eJET}
+
+O editor de tabuleiro do eJET é um software adicional que acompanha o \textit{framework} e permite a edição fácil da estrutura de caminho (path) que os jogadors seguem no tabuleiro. O software permite selecionar uma imagem de fundo e demarcar as coordenadas (X, Y) de cada posição possível no caminho que os jogadores poderão seguir na partida
+
+
+
